@@ -229,46 +229,82 @@
     <h2>Videos</h2>
     <p class="muted">Disfruta de los últimos videoclips de Alberto Ergu.</p>
     <div class="grid grid-3">
+<!-- 🎥 SECCIÓN VIDEOS -->
+<style>
+.videos-section {
+  display: flex;
+  flex-direction: column; /* Columna = uno debajo del otro */
+  gap: 2rem; /* espacio entre cada video */
+  max-width: 900px; /* ancho máximo */
+  margin: auto; /* centrado */
+  padding: 2rem 1rem;
+}
 
-      <!-- Video 1: Escríbeme -->
-      <div class="card">
-        <h3>Escríbeme</h3>
-        <iframe width="100%" height="315"
-                src="https://www.youtube.com/embed/0YYLd5rXm-A"
-                title="Escríbeme - Alberto Ergu"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                style="border-radius:12px;"></iframe>
-      </div>
+.video-card {
+  background: #1a1a1a;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
 
-      <!-- Video 2: DUBÁI -->
-      <div class="card">
-        <h3>DUBÁI</h3>
-        <iframe width="100%" height="315"
-                src="https://www.youtube.com/embed/rl19pKVGibc"
-                title="DUBÁI - Alberto Ergu"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                style="border-radius:12px;"></iframe>
-      </div>
+.video-card h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}
 
-      <!-- Video 3: DULCE -->
-      <div class="card">
-        <h3>DULCE</h3>
-        <iframe width="100%" height="315"
-                src="https://www.youtube.com/embed/LOq39qVJVcs"
-                title="DULCE - Alberto Ergu"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-                style="border-radius:12px;"></iframe>
-      </div>
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* relación 16:9 */
+  border-radius: 12px;
+  overflow: hidden;
+}
 
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+}
+</style>
+
+<section class="videos-section">
+  <div class="video-card">
+    <h3>escríbeme</h3>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/0YYLd5rXm-A"
+              title="Escríbeme - Alberto Ergu"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <h3>DUBÁI</h3>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/rl19pKVGibc"
+              title="DUBÁI - Alberto Ergu"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <h3>DULCE</h3>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/LOq39qVJVcs"
+              title="DULCE - Alberto Ergu"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
     </div>
   </div>
 </section>
+
 
 
   <!-- Conciertos -->

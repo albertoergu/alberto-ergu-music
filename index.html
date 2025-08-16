@@ -181,43 +181,46 @@
   </section>
 
   <!-- Música -->
-  <section id="musica" class="section">
+<section id="musica" class="section">
   <div class="container">
-    <h2 class="text-3xl font-bold mb-6">Música</h2>
-    <p class="text-muted mb-6">Escucha la música de Alberto Ergu en tus plataformas favoritas.</p>
+    <h2>Música</h2>
+    <p class="muted">Escucha la música de Alberto Ergu en tus plataformas favoritas.</p>
+    <div class="grid grid-3">
 
-    <div class="grid gap-8 md:grid-cols-3">
-
-      <!-- Spotify Perfil -->
+      <!-- Spotify -->
       <div class="card">
-        <h3 class="text-xl font-semibold mb-3">Spotify</h3>
-        <iframe style="border-radius:12px" 
-                src="https://open.spotify.com/intl-es/artist/4y34V3ifN8C86HQP0y3QBJ?si=nMAEtHXJQqCcWUNxrptwVQ" 
-                width="33.33%" height="400" frameborder="0" 
-                allowfullscreen="" 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        <h3>Spotify</h3>
+        <iframe style="border-radius:12px;"
+                src="https://open.spotify.com/embed/artist/4y34V3ifN8C86HQP0y3QBJ?utm_source=generator"
+                width="100%" height="400" frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"></iframe>
+      </div>
 
-      <!-- Apple Music Perfil -->
+      <!-- Apple Music -->
       <div class="card">
-        <h3 class="text-xl font-semibold mb-3">Apple Music</h3>
-        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" 
-                frameborder="0" height="400" style="width:33.33%;max-width:660px;overflow:hidden;background:transparent;" 
-                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" 
-                src="https://music.apple.com/es/artist/alberto-ergu/1761165649"></iframe>
+        <h3>Apple Music</h3>
+        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+                frameborder="0" height="400"
+                style="width:100%; max-width:660px; overflow:hidden; background:transparent; border-radius:12px;"
+                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+                src="https://embed.music.apple.com/es/artist/alberto-ergu/1761165649"></iframe>
+      </div>
 
-      <!-- Amazon Music Perfil -->
+      <!-- Amazon Music -->
       <div class="card">
-        <h3 class="text-xl font-semibold mb-3">Amazon Music</h3>
-        <iframe src="https://music.amazon.es/artists/B0DC79ZMMH/alberto-ergu?marketplaceId=A1RKKUPIHCS9HS&musicTerritory=ES&ref=dm_sh_lrBl3cp3wpoHN5fUB0MnTnQa6></iframe>" 
-                width="33.33%" height="400" frameborder="0" 
-                style="border-radius:12px;" 
-                allow="autoplay *; encrypted-media *;"></iframe>
+        <h3>Amazon Music</h3>
+        <!-- Amazon no ofrece un widget oficial igual que Spotify/Apple; se muestra enlace directo -->
+        <iframe src="https://music.amazon.es/embed/B0FG12QSS6"
+                width="100%" height="400" frameborder="0"
+                style="border-radius:12px;"
+                allow="autoplay; encrypted-media;"></iframe>
       </div>
 
     </div>
   </div>
 </section>
+
 
 
   <!-- Videoclips Oficiales -->

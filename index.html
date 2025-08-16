@@ -305,7 +305,7 @@
 
   <!-- Conciertos -->
   <section id="conciertos" class="section">
-   <!-- 🎤 SECCIÓN CONCIERTOS -->
+  <!-- 🎤 SECCIÓN CONCIERTOS -->
 <style>
 .conciertos-section {
   max-width: 1000px;
@@ -353,14 +353,21 @@
   border-bottom: none;
 }
 
-.conciertos-table a {
-  color: #a855f7;
-  text-decoration: none;
+/* 🎟️ Botón personalizado */
+.btn-entradas {
+  display: inline-block;
+  background: #a855f7;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
   font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.conciertos-table a:hover {
-  text-decoration: underline;
+.btn-entradas:hover {
+  background: #9333ea; /* más oscuro al pasar el ratón */
+  transform: scale(1.05);
 }
 </style>
 
@@ -380,23 +387,24 @@
         <td>PRÓXIMAMENTE</td>
         <td>PRÓXIMAMENTE</td>
         <td>PRÓXIMAMENTE</td>
-        <td><a href="" target="_blank">PRÓXIMAMENTE</a></td>
+        <td><a href="" target="_blank" class="btn-entradas">PRÓXIMAMENTE</a></td>
       </tr>
       <tr>
         <td>PRÓXIMAMENTE</td>
         <td>PRÓXIMAMENTE</td>
         <td>PRÓXIMAMENTE</td>
-        <td><a href="" target="_blank">PRÓXIMAMENTE</a></td>
+        <td><a href="" target="_blank" class="btn-entradas">PRÓXIMAMENTE</a></td>
       </tr>
       <tr>
         <td>PRÓXIMAMENTE</td>
         <td>PRÓXIMAMENTE</td>
         <td>PRÓXIMAMENTE</td>
-        <td><a href="" target="_blank">PRÓXIMAMENTEr</a></td>
+        <td><a href="" target="_blank" class="btn-entradas">PRÓXIMAMENTE</a></td>
       </tr>
     </tbody>
   </table>
 </section>
+
 
 
   <!-- Contacto -->
